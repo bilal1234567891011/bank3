@@ -1,0 +1,50 @@
+<h2 style="color: rgba(0, 0, 0, 0.696); text-align: center; background-color: rgba(0,0,0,0.468)" class="">{{data}}</h2>
+<div class="container w-50 rounded text-center p-3 mt-5" style="background-color: rgba(0, 0, 0, 0.468); " >
+    <h1>Sign In To Your Bank Account</h1>
+    <form action="" (ngSubmit)="login()">
+        <div class="p-3 mt-2">
+
+                                      <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+                                     <!-- event binding with templete reendering variable----#variable -->
+
+                                        <!-- <input #acnum   id="acid" name="acnum1" class="form-control" type="text" [placeholder]="inputplaceholder"> -->
+                                        <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+  <input [(ngModel)]="acno"    id="acid" name="acnum1" class="form-control" type="text" [placeholder]="inputplaceholder">
+
+ </div>
+<div class="p-3 mt-2">
+
+
+                                 <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+                                 <!-- event binding with templete reendering variable----#variable -->
+
+                                    <!-- <input #psw   id="psw1" name="paswrd1" class="form-control" type="password" placeholder="Password"> -->
+                                          <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+          
+ <input [(ngModel)]=psw    id="psw1" name="paswrd1" class="form-control" type="password" placeholder="Password">
+
+</div>
+ <div class="p-3 mt-2">
+               
+            
+                                    <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+                                         <!-- event binding with templete reendering variable----#variable -->
+
+                                                <!-- <button (click)="login(acnum,psw)"  type="button"  class="btn btn-outline-light">Login</button> -->
+        
+                                      <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+   
+   
+  <button   type="submit"  class="btn btn-outline-light">Login</button>
+
+    </div>
+<div class="text-center text-white">
+   <strong> Not registerd?</strong><a style="text-decoration:none ; color: rgb(223, 178, 65);" href="" routerLink="register">
+  <strong>  Register</strong>
+</a></div>    
+</form>
+</div>
+

@@ -1,0 +1,60 @@
+<div class="container w-50 rounded text-center p-3 mt-5" style="background-color: rgba(0, 0, 0, 0.468); " >
+    <h1>Sign Up To Bank</h1>
+    <form [formGroup]="registerForm" action="">
+        <div class="p-3 mt-2">
+
+                                      <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+                                     <!-- event binding with templete reendering variable----#variable -->
+
+                                        <!-- <input #acnum   id="acid" name="acnum1" class="form-control" type="text" [placeholder]="inputplaceholder"> -->
+                                        <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+  <input formControlName="uname"  id="unamid" name="usern1" class="form-control" type="text" placeholder="User Name">
+
+ </div>
+
+
+
+ <div class="p-3 mt-2">
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+   <!-- event binding with templete reendering variable----#variable -->
+
+      <!-- <input #acnum   id="acid" name="acnum1" class="form-control" type="text" [placeholder]="inputplaceholder"> -->
+      <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+<input formControlName ="acno"   id="acid" name="acnum1" class="form-control" type="text" placeholder="Account Number">
+
+</div>
+
+
+<div class="p-3 mt-2">
+
+
+                                 <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+                                 <!-- event binding with templete reendering variable----#variable -->
+
+                                    <!-- <input #psw   id="psw1" name="paswrd1" class="form-control" type="password" placeholder="Password"> -->
+                                          <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+          
+ <input formControlName="psw"    id="psw1" name="paswrd1" class="form-control" type="password" placeholder="Enter Password">
+
+</div>
+ <div class="p-3 mt-2">
+               
+            
+                                    <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+                                         <!-- event binding with templete reendering variable----#variable -->
+
+                                                <!-- <button (click)="login(acnum,psw)"  type="button"  class="btn btn-outline-light">Login</button> -->
+        
+                                      <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
+   
+   
+  <button  (click)="register()" type="button"  class="btn btn-outline-warning">Register</button>
+
+    </div>
+</form>
+</div>
+
